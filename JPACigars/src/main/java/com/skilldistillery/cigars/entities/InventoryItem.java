@@ -26,7 +26,7 @@ public class InventoryItem {
 	
 	@ManyToOne
 	@JoinColumn(name="cigar_id")
-	private Cigar cigar;
+	private Cigar cigarId;
 
 	
 	
@@ -55,10 +55,10 @@ public class InventoryItem {
 		this.dateAcquired = dateAcquired;
 	}
 	public Cigar getCigar() {
-		return cigar;
+		return cigarId;
 	}
 	public void setCigar(Cigar cigar) {
-		this.cigar = cigar;
+		this.cigarId = cigar;
 	}
 
 
@@ -85,7 +85,7 @@ public class InventoryItem {
 	@Override
 	public String toString() {
 		return "InventoryItem [id=" + id + ", quantity=" + quantity + ", dateAcquired=" + dateAcquired + ", cigar="
-				+ cigar + "]";
+				+ cigarId + "]";
 	}
 	
 }
