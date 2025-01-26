@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Cigar {
@@ -38,6 +40,10 @@ public class Cigar {
 	
 	@Column(name="image_url")
 	private String imageUrl;
+	
+	@ManyToOne
+	@JoinColumn(name = "shape_id")
+	private Shape shape;
 	
 	
 	
@@ -119,9 +125,15 @@ public class Cigar {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
-	
-	
-	
+	public Shape getShape() {
+		return shape;
+	}
+	public void setShape(Shape shape) {
+		this.shape = shape;
+	}
+
+
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);

@@ -36,7 +36,7 @@ DROP TABLE IF EXISTS `shape` ;
 CREATE TABLE IF NOT EXISTS `shape` (
   `id` INT NOT NULL,
   `name` VARCHAR(45) NOT NULL,
-  `decription` TEXT NOT NULL,
+  `description` TEXT NOT NULL,
   `img_url` TEXT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -164,27 +164,27 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `cigarsdb`;
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (1, 'Corona', 'Size: ~5.5 inches, 42–44 ring gauge\nA classic cigar size with a balanced smoking experience.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (2, 'Petit Corona', 'Size: ~4.5 inches, 40–42 ring gauge\nA smaller version of the Corona, ideal for a quicker smoke.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (3, 'Robusto', 'Size: ~5 inches, 50 ring gauge\nA popular size, known for a short, flavorful smoke.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (4, 'Churchill', 'Size: ~7 inches, 47–50 ring gauge\nNamed after Winston Churchill, offering a long and refined smoking session.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (5, 'Toro', 'Size: ~6 inches, 50–54 ring gauge\nA longer version of the Robusto, often preferred by seasoned smokers.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (6, 'Panetela', 'Size: ~6–7.5 inches, 34–38 ring gauge\nA thin and elegant cigar, offering a longer, slower smoke.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (7, 'Lancero', 'Size: ~7–7.5 inches, 38 ring gauge\nA narrow cigar, often associated with complex flavor delivery.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (8, 'Double Corona', 'Size: ~7.5–8 inches, 49–52 ring gauge\nA large, luxurious cigar for extended smoking sessions.\n', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (9, 'Lonsdale', 'Size: ~6.5 inches, 42 ring gauge\nSlightly longer than a Corona, offering a medium-length experience.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (10, 'Gordo (Gigante)', 'Size: ~6 inches, 60+ ring gauge\nThick cigars for those who prefer a long and hearty smoke.\n', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (11, 'Presidente (Gran Corona)', 'Size: ~8 inches, 52+ ring gauge\nA large and impressive cigar for celebratory occasions.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (12, 'Torpedo', 'Size: Varies; tapered at the head\nKnown for its distinct shape, which enhances flavor concentration.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (13, 'Perfecto', 'Size: Varies; tapered at both ends\nA classic shape with a unique draw and smoking experience.\n', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (14, 'Cigarillo', 'Size: ~3–4 inches, 26–34 ring gauge\nA very small cigar, often for a quick smoke.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (15, 'Cheroot', 'Size: ~4–6 inches, small ring gauge\nAn open-ended, rustic-style cigar.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (16, 'Half Corona', 'Size: ~3.5–4 inches, 42 ring gauge\nA smaller version of the classic Corona for shorter sessions.\n', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (17, 'Diadema', 'Size: ~8 inches, tapered head and foot\nA large and artistic cigar.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (18, 'Salomon', 'Size: ~7 inches, ~57 ring gauge at its widest\nA pointed foot and tapered shape for a unique experience.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (19, 'Pyramid', 'Size: Varies; tapered head\nSimilar to the Torpedo, but with a longer taper.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (20, 'Box Pressed', 'Flattened sides with a square or rectangular profile.\nThe edges can range from sharply squared to slightly rounded, depending on the pressing process.', NULL);
-INSERT INTO `shape` (`id`, `name`, `decription`, `img_url`) VALUES (21, 'Parejo', 'A parejo cigar is the most traditional and common shape of a cigar. It is characterized by its straight, cylindrical body, even sides, and rounded head. Parejos come in a variety of sizes, ranging from small to very large, and they represent the classic look and feel that many cigar enthusiasts associate with premium cigars.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (1, 'Corona', 'Size: ~5.5 inches, 42–44 ring gauge\nA classic cigar size with a balanced smoking experience.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (2, 'Petit Corona', 'Size: ~4.5 inches, 40–42 ring gauge\nA smaller version of the Corona, ideal for a quicker smoke.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (3, 'Robusto', 'Size: ~5 inches, 50 ring gauge\nA popular size, known for a short, flavorful smoke.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (4, 'Churchill', 'Size: ~7 inches, 47–50 ring gauge\nNamed after Winston Churchill, offering a long and refined smoking session.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (5, 'Toro', 'Size: ~6 inches, 50–54 ring gauge\nA longer version of the Robusto, often preferred by seasoned smokers.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (6, 'Panetela', 'Size: ~6–7.5 inches, 34–38 ring gauge\nA thin and elegant cigar, offering a longer, slower smoke.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (7, 'Lancero', 'Size: ~7–7.5 inches, 38 ring gauge\nA narrow cigar, often associated with complex flavor delivery.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (8, 'Double Corona', 'Size: ~7.5–8 inches, 49–52 ring gauge\nA large, luxurious cigar for extended smoking sessions.\n', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (9, 'Lonsdale', 'Size: ~6.5 inches, 42 ring gauge\nSlightly longer than a Corona, offering a medium-length experience.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (10, 'Gordo (Gigante)', 'Size: ~6 inches, 60+ ring gauge\nThick cigars for those who prefer a long and hearty smoke.\n', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (11, 'Presidente (Gran Corona)', 'Size: ~8 inches, 52+ ring gauge\nA large and impressive cigar for celebratory occasions.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (12, 'Torpedo', 'Size: Varies; tapered at the head\nKnown for its distinct shape, which enhances flavor concentration.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (13, 'Perfecto', 'Size: Varies; tapered at both ends\nA classic shape with a unique draw and smoking experience.\n', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (14, 'Cigarillo', 'Size: ~3–4 inches, 26–34 ring gauge\nA very small cigar, often for a quick smoke.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (15, 'Cheroot', 'Size: ~4–6 inches, small ring gauge\nAn open-ended, rustic-style cigar.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (16, 'Half Corona', 'Size: ~3.5–4 inches, 42 ring gauge\nA smaller version of the classic Corona for shorter sessions.\n', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (17, 'Diadema', 'Size: ~8 inches, tapered head and foot\nA large and artistic cigar.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (18, 'Salomon', 'Size: ~7 inches, ~57 ring gauge at its widest\nA pointed foot and tapered shape for a unique experience.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (19, 'Pyramid', 'Size: Varies; tapered head\nSimilar to the Torpedo, but with a longer taper.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (20, 'Box Pressed', 'Flattened sides with a square or rectangular profile.\nThe edges can range from sharply squared to slightly rounded, depending on the pressing process.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (21, 'Parejo', 'A parejo cigar is the most traditional and common shape of a cigar. It is characterized by its straight, cylindrical body, even sides, and rounded head. Parejos come in a variety of sizes, ranging from small to very large, and they represent the classic look and feel that many cigar enthusiasts associate with premium cigars.', NULL);
 
 COMMIT;
 

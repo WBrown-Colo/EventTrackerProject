@@ -1,12 +1,16 @@
 package com.skilldistillery.cigars.entities;
 
+import java.util.List;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class Shape {
@@ -17,8 +21,12 @@ public class Shape {
 	private String name;
 	private String description;
 	
-	@Column(name="image_url")
+	@Column(name="img_url")
 	private String imageUrl;
+	
+	@JsonIgnore
+	@OneToMany(mappedBy ="shape")
+	private List<Cigar> cigars;
 
 	
 	
@@ -51,6 +59,12 @@ public class Shape {
 	}
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
+	}
+	public List<Cigar> getCigars() {
+		return cigars;
+	}
+	public void setCigars(List<Cigar> cigars) {
+		this.cigars = cigars;
 	}
 
 
