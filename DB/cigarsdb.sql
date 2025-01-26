@@ -185,6 +185,7 @@ INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (18, 'Salomo
 INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (19, 'Pyramid', 'Size: Varies; tapered head\nSimilar to the Torpedo, but with a longer taper.', NULL);
 INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (20, 'Box Pressed', 'Flattened sides with a square or rectangular profile.\nThe edges can range from sharply squared to slightly rounded, depending on the pressing process.', NULL);
 INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (21, 'Parejo', 'A parejo cigar is the most traditional and common shape of a cigar. It is characterized by its straight, cylindrical body, even sides, and rounded head. Parejos come in a variety of sizes, ranging from small to very large, and they represent the classic look and feel that many cigar enthusiasts associate with premium cigars.', NULL);
+INSERT INTO `shape` (`id`, `name`, `description`, `img_url`) VALUES (22, 'Other', 'Custom and/or uncommon shape.', NULL);
 
 COMMIT;
 
