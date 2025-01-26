@@ -5,5 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.skilldistillery.cigars.entities.Cigar;
 
 public interface CigarRepository extends JpaRepository<Cigar, Integer> {
+	
+	Cigar queryById(int cigarId);
 
 }
