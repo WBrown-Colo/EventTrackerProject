@@ -27,7 +27,6 @@ public class CigarController {
 	@GetMapping("cigars")
 	public List<Cigar> listCigars() {
 		return cigarService.findAll();
-		
 	}
 	
 	@GetMapping("cigars/{cigarId}")
