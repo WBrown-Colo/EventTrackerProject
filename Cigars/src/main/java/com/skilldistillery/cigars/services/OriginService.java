@@ -7,6 +7,6 @@ import com.skilldistillery.cigars.entities.Origin;
 public interface OriginService {
 
 	List<Origin> findAll();
-	Origin findByOriginId();
+	Origin findByOriginId(int originId);
 	
 }

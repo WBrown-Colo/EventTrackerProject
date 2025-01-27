@@ -43,6 +43,7 @@ public class InventoryItemServiceImpl implements InventoryItemService {
 			updatedInventoryItem.setCigar(inventoryItem.getCigar());
 			updatedInventoryItem.setQuantity(inventoryItem.getQuantity());
 			updatedInventoryItem.setDateAcquired(inventoryItem.getDateAcquired());
+			inventoryItemRepo.saveAndFlush(updatedInventoryItem);
 			
 		}
 		return updatedInventoryItem;
