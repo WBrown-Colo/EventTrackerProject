@@ -7,6 +7,7 @@
     <class>com.skilldistillery.cigars.entities.Cigar</class>
     <class>com.skilldistillery.cigars.entities.Shape</class>
     <class>com.skilldistillery.cigars.entities.InventoryItem</class>
+    <class>com.skilldistillery.cigars.entities.Origin</class>
 
     <properties>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cigarsdb" />
