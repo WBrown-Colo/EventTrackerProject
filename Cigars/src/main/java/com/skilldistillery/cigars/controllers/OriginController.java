@@ -23,7 +23,7 @@ public class OriginController {
 		return originService.findAll();
 	}
 	
-	@GetMapping("origins/{originsId}")
+	@GetMapping("origins/{originId}")
 	public Origin listOrigin(@PathVariable("originId") int originId) {
 		Origin origin = originService.findByOriginId(originId);
 		
