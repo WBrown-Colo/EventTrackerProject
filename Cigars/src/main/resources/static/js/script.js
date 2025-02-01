@@ -6,13 +6,13 @@ window.addEventListener('load', function(e){
 
 function init() {
 	console.log('In init');
-	document.cigarForm.lookup.addEventListener('click', function(e){
-		e.preventDefault();
-		let cigarId = document.cigarForm.cigarId.value;
-		if (!isNaN(cigarId) && cigarId > 0) {
-			getCigar(cigarId);
-		}
-	});
+//	document.cigarForm.lookup.addEventListener('click', function(e){
+//		e.preventDefault();
+//		let cigarId = document.cigarForm.cigarId.value;
+//		if (!isNaN(cigarId) && cigarId > 0) {
+//			getCigar(cigarId);
+//		}
+//	});
 	document.createCigar.addCigarButton.addEventListener('click', function(e){
 		e.preventDefault();
 		
