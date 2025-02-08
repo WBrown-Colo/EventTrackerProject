@@ -8,8 +8,9 @@ export class Cigar {
   strength: string;
   singlePrice: number;
   yearIntro: number;
-  createDate: string;
-  lastUpdate: string;
+  completed: boolean;
+  createDate: string | null;
+  lastUpdate: string | null;
   imageUrl: string;
 
   constructor(
@@ -22,6 +23,7 @@ export class Cigar {
     strength: string = '',
     singlePrice: number = 0,
     yearIntro: number = 0,
+    completed: boolean = false,
     createDate: string = '',
     lastUpdate: string = '',
     imageUrl: string = ','
@@ -35,6 +37,7 @@ export class Cigar {
   this.strength = strength;
   this.singlePrice = singlePrice;
   this.yearIntro = yearIntro;
+  this.completed = completed;
   this.createDate = createDate;
   this.lastUpdate = lastUpdate;
   this.imageUrl = imageUrl;
