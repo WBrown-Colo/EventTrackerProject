@@ -1,8 +1,10 @@
 package com.skilldistillery.cigars.entities;
 
+import java.sql.Wrapper;
 import java.util.Date;
-import java.util.List;
 import java.util.Objects;
+
+import javax.swing.Box.Filler;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,7 +13,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+import jakarta.xml.bind.Binder;
 
 @Entity
 public class Cigar {
@@ -47,6 +49,21 @@ public class Cigar {
 	@JoinColumn(name = "shape_id")
 	private Shape shape;
 	
+	@ManyToOne
+	@JoinColumn(name = "origin_id")
+	private Origin origin;
+	
+	@ManyToOne
+	@JoinColumn(name = "wrapper_origin_id")
+	private Wrapper wrapperOrigin;
+	
+	@ManyToOne
+	@JoinColumn(name = "binder_origin_id")
+	private Binder binderOrigin;
+	
+	@ManyToOne
+	@JoinColumn(name = "filler_origin_id")
+	private Filler fillerOrigin;
 	
 	
 	public Cigar() {

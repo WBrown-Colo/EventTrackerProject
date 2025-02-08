@@ -1,3 +1,5 @@
+import { Shape } from "./shape";
+
 export class Cigar {
   id: number;
   brand: string;
@@ -12,6 +14,7 @@ export class Cigar {
   createDate: string | null;
   lastUpdate: string | null;
   imageUrl: string;
+  shape: Shape;
 
   constructor(
     id: number = 0,
@@ -26,7 +29,8 @@ export class Cigar {
     completed: boolean = false,
     createDate: string = '',
     lastUpdate: string = '',
-    imageUrl: string = ','
+    imageUrl: string = '',
+    shape: Shape = new Shape(),
 ) {
   this.id = id;
   this.brand = brand;
@@ -41,6 +45,7 @@ export class Cigar {
   this.createDate = createDate;
   this.lastUpdate = lastUpdate;
   this.imageUrl = imageUrl;
+  this.shape = shape;
 }
 
 
